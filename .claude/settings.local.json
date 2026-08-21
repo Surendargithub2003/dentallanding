@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd \"F:/Project/Art/backend/art\" && find src -type f 2>/dev/null; echo \"---package.json---\"; cat package.json 2>/dev/null; echo \"---README---\"; cat README.md 2>/dev/null)",
+      "Read(//f/Project/Art/backend/art/**)",
+      "Bash(cd \"D:/tevaram/temple_tracker\" && echo \"=== temple.dart ===\"; cat lib/models/temple.dart; echo \"=== nadu.dart ===\"; cat lib/models/nadu.dart; echo \"=== naayanmaar_event.dart ===\"; cat lib/models/naayanmaar_event.dart)",
+      "Read(//d/tevaram/temple_tracker/**)",
+      "Bash(cd \"D:/tevaram/temple_tracker\" && echo \"=== init_db.sql ===\"; cat assets/sql/init_db.sql)",
+      "Bash(cd \"D:/tevaram/temple_tracker\" && echo \"=== main.dart ===\"; cat lib/main.dart)",
+      "Bash(cd \"F:/Project/Art/art\" && find public -type f 2>/dev/null; echo \"---assets---\"; find src/assets -type f 2>/dev/null; echo \"---logo size---\"; ls -la src/assets/ 2>/dev/null)",
+      "Read(//f/Project/Art/art/**)",
+      "Read(//f/Project/Art/art/src/app/**)",
+      "Read(//d/personal_assistant/personal-assist/**)",
+      "Read(//d/personal_assistant/persional_assist_backend/routes/**)",
+      "Read(//d/personal_assistant/personal_assistant_bot/**)",
+      "Read(//d/personal_assistant/admin-dashboard-demo/**)",
+      "Bash(echo \"EXIT:$?\")",
+      "Bash(awk '/INSERT INTO temple/,/;/' assets/sql/init_db.sql)"
+    ]
+  }
+}
