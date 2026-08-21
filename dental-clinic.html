@@ -970,8 +970,8 @@ footer { padding: 70px 0 30px; }
   .hero-visual { max-width: 380px; margin: 0 auto; }
   .why-grid { grid-template-columns: 1fr; padding: 50px 32px; }
   .services-grid { grid-template-columns: repeat(2, 1fr); }
-  .pricing-grid { grid-template-columns: repeat(2, 1fr); }
-  .team-grid { grid-template-columns: repeat(2, 1fr); }
+  .pricing-grid { grid-template-columns: 1fr; max-width: 440px; margin: 0 auto; }
+  .team-grid { grid-template-columns: 1fr; max-width: 440px; margin: 0 auto; }
   .process-grid { grid-template-columns: repeat(2, 1fr); row-gap: 40px; }
   .appt-grid { grid-template-columns: 1fr; padding: 46px 32px; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
@@ -1000,12 +1000,17 @@ footer { padding: 70px 0 30px; }
   .nav-links.open { right: 0; }
   .nav-links a { font-size: 17px; padding: 12px 0; width: 100%; }
   .nav-phone span { display: none; }
+  .nav-right { gap: 14px; }
+  .nav-right > a.btn-primary { display: none; }
   .menu-toggle { display: flex; }
   .why-grid, .appt-grid { padding-left: 22px; padding-right: 22px; }
-  .services-grid, .pricing-grid, .team-grid { grid-template-columns: 1fr; }
+  .services-grid, .pricing-grid, .team-grid { grid-template-columns: 1fr; max-width: none; margin: 0; }
   .process-grid { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; gap: 30px; }
+  .footer-bottom { justify-content: center; text-align: center; }
+  .strip-row { justify-content: center; text-align: center; }
+  .stat-card:nth-child(2), .stat-card:nth-child(4) { margin-top: 0; }
   section { padding: 64px 0; }
   .hero { padding: 40px 0 60px; }
   .mobile-cta { display: flex; }
@@ -1014,6 +1019,28 @@ footer { padding: 70px 0 30px; }
   .back-top { bottom: 88px; right: 16px; width: 44px; height: 44px; }
   .testi-card { padding: 28px 22px; }
   .testi-card p.quote { font-size: 16px; }
+}
+
+@media (max-width: 480px) {
+  .wrap { padding: 0 16px; }
+  .brand { font-size: 17px; gap: 8px; }
+  .brand-mark { width: 32px; height: 32px; }
+  section { padding: 48px 0; }
+  .hero { padding: 28px 0 44px; }
+  .hero h1 { font-size: clamp(28px, 9vw, 40px); }
+  .hero-sub { font-size: 15.5px; }
+  .btn-lg { padding: 14px 24px; font-size: 15px; }
+  .section-head p { font-size: 15.5px; }
+  .service-card, .price-card { padding: 22px 20px; }
+  .shade-panel { padding: 22px 18px; }
+  .why-grid { padding: 36px 20px; }
+  .appt-grid { padding: 28px 16px; }
+  .appt-form { padding: 22px; }
+  .visit-info { padding: 24px 20px; }
+  .testi-card { padding: 22px 16px; }
+  .testi-card p.quote { font-size: 15px; }
+  .price-amount .num { font-size: 34px; }
+  .stat-num { font-size: 30px; }
 }
 </style>
 </head>
